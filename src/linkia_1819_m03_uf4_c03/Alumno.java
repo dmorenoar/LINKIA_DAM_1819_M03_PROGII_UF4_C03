@@ -9,7 +9,7 @@ package linkia_1819_m03_uf4_c03;
  *
  * @author dmorenoar
  */
-public class Alumno extends Persona{
+public class Alumno extends Persona implements Matricular{
     
     private int nota = 10;
     private int[] notas = new int[5];
@@ -42,6 +42,21 @@ public class Alumno extends Persona{
     /*Llamo desde el hijo a un método comun que tiene el padre desde el hijo*/
     public void calcularMiNota(int[] notas){
         notas[0] = super.dameNota() + 10; //Utilizo super. para llamar a un método del padre
+    }
+
+    @Override
+    public void nacer(int dia) {
+        System.out.println("Soy un alumno");
+    }
+
+    @Override
+    public int apuntarAsignatura(int nota) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void asistenciaClase() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

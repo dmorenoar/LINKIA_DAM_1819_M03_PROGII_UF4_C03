@@ -16,30 +16,14 @@ public class LINKIA_1819_M03_UF4_C03 {
      */
     public static void main(String[] args) {
         
+        //Creo un array de la clase más alta de la jerarquía
+        Persona[] listaPersonas = new Persona[10];
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        /*
+            Persona             Persona
+                Matricular          Maestro
+                    Alumno
+        */
         
         
         Maestro ma = new Maestro(1000);
@@ -47,6 +31,11 @@ public class LINKIA_1819_M03_UF4_C03 {
         Maestro maVIP = new Maestro(50000, 3);
         
         Alumno alu = new Alumno("Pepe", 55, 'H', 5);
+        
+        //Introduzco a un maestro y un alumno porque heredan de la clase Persona
+        listaPersonas[0] = ma;
+        listaPersonas[1] = alu;
+        
         
         alu.saludar();
         

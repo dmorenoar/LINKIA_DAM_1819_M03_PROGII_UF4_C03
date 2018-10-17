@@ -9,7 +9,7 @@ package linkia_1819_m03_uf4_c03;
  *
  * @author dmorenoar
  */
-public class Persona {
+public abstract class Persona {
 
     private String nombre = "";
     private int edad = 0;
@@ -70,5 +70,7 @@ public class Persona {
     public int dameNota(){
         return 11; //Podría ser una operación 
     }
+    
+    public abstract void nacer(int dia);
     
 }

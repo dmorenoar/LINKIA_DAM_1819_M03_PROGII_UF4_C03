@@ -44,5 +44,12 @@ public class Maestro extends Persona{
     public void cobrar() {
         System.out.println("Voy a cobrar!!!");
     }
+
+    /*La clase padre Persona me obliga a heredar este método y a
+    implementar su funcionalidad*/
+    @Override
+    public void nacer(int dia) {
+        System.out.println("Soy un maestro");
+    }
     
 }
